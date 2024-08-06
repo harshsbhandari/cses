@@ -15,9 +15,9 @@ void yo(){
         return ;
     }
 
+    // Simple implementation
     char x = s[0];
     int count = 1;
-
     for(int i = 1; i < n; i++){
         if(s[i] == x)
             count++;
@@ -25,7 +25,6 @@ void yo(){
             x = s[i];
             count = 1;
         }
-
         ans = max(ans, count);
     }
     

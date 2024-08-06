@@ -5,10 +5,27 @@ using namespace std;
 #define float double
 #define endl '\n'
 
+// Calculating the power(x, n) -> TC - O(logn)
+
+// Calculating the power efficiently
+int mod = 1e9+7;
+int calculatePower(int num, int power){
+    int result = 1;
+    while(power > 0){
+        if(power & 1)
+            result = ((result%mod)*(num%mod))%mod;
+        
+        num = ((num%mod)*(num%mod))%mod;
+        power = power >> 1;
+    }
+    return result%mod;
+}
+
 void yo(){
     int n;
     cin>>n;
-
+    
+    cout<<calculatePower(2, n);
 }
 
 int32_t main(){

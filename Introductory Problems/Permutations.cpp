@@ -13,12 +13,12 @@ void yo(){
         cout<<"1";
         return ;
     }
-
     if(n < 4){
         cout<<"NO SOLUTION";
         return ;
     }
 
+    // Simple implementation
     for(int i = 2; i <= n; i += 2)
         cout<<i<<" ";
     for(int i = 1; i <= n; i += 2)

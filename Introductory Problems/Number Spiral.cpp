@@ -12,7 +12,6 @@ void yo(){
     cin>>x>>y;
     
     int ans = 0;
-    
     if(y > x){
         if(y%2)
             ans = y*y + (-x+1);

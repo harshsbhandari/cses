@@ -6,6 +6,7 @@ using namespace std;
 #define endl '\n'
 
 // Good problem - resolve
+// Sum property (n*(n+1))/2
 
 void yo(){
     vector<int>arr;
